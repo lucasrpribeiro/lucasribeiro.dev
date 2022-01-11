@@ -10,7 +10,11 @@ module.exports = {
       primary: '#0284c7',
       secondary: '#0369a1'
     },
-    extend: {}
+    extend: {
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif']
+      }
+    }
   },
   variants: {
     extend: {}
