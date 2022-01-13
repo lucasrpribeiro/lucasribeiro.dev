@@ -2,9 +2,11 @@
   <div :class="$style.header">
     <div :class="$style.logo">
       <a href="http://github.com/lukinhas711" target="_blank">Lucas Ribeiro</a>
-      <button>icone menu</button>
+      <TheNavButton id="button" v-model="openned">
+        <TheBaseIcon name="hamburger" title="Fechar Menu" description="Fechar Menu" size="x6" />
+      </TheNavButton>
     </div>
-    <nav id="menu" :class="$style.navbar">
+    <nav v-show="openned" :class="$style.navbar">
       <nuxt-link to="/" :class="$style.navItem">
         Inicio
       </nuxt-link>
