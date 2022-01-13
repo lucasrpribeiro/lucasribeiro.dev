@@ -11,10 +11,14 @@
   </button>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue'
+
+import vModel from '@/mixins/vModel'
+
 export default Vue.extend({
   name: 'TheNavButton',
+  mixins: [vModel],
   props: {
     value: {
       type: Boolean,
@@ -51,6 +55,6 @@ export default Vue.extend({
 
 <style lang="postcss" module>
 .hamburger {
-  @apply col-start-5 col-end-6 mx-auto;
+  @apply col-start-5 col-end-6;
 }
 </style>
