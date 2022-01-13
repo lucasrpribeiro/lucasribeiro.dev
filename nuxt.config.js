@@ -42,7 +42,9 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    // https://github.com/nuxt-community/svg-sprite-module/
+    '@nuxtjs/svg-sprite'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -56,6 +58,11 @@ export default {
     manifest: {
       lang: 'en'
     }
+  },
+
+  // https://github.com/nuxt-community/svg-sprite-module#options
+  svgSprite: {
+    elementClass: ''
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
