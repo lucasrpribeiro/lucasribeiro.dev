@@ -8,7 +8,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "prepare": "husky install"
   },
   "engines": {
     "node": "16.x"
@@ -25,5 +26,8 @@
   },
   "dependencies": {
     "astro": "^1.6.15"
+  },
+  "devDependencies": {
+    "husky": "^8.0.2"
   }
 }
