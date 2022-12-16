@@ -9,6 +9,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "lint": "eslint --ext .js,.ts,.vue,.astro --ignore-path .gitignore .",
     "prepare": "husky install"
   },
   "engines": {
@@ -36,7 +37,10 @@
     "vue": "^3.2.30"
   },
   "devDependencies": {
+    "@typescript-eslint/parser": "^5.46.1",
     "astro-robots-txt": "^0.3.10",
+    "eslint": "^8.29.0",
+    "eslint-plugin-astro": "^0.21.1",
     "husky": "^8.0.2",
     "prettier": "^2.8.1",
     "prettier-plugin-astro": "^0.7.0"
