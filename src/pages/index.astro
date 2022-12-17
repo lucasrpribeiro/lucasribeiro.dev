@@ -1,23 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import NavBar from '../components/vue/NavBar.vue'
 ---
 
 <Layout title="Lucas Ribeiro - Welcome to my site.">
-  <main class="flex items-center justify-center">
-    <h1 class="font-montserrat text-3xl group">
-      Hello World! I'm
-      <span
-        class="font-bold text-transparent bg-clip-text bg-gradient-to-br from-green-500 to-purple-600"
-      >
-        Lucas
-      </span>
-    </h1>
+  <main class="relative container mx-auto">
+    <NavBar client:only />
   </main>
 </Layout>
-
-<style>
-  main {
-    width: 100%;
-    height: 100vh;
-  }
-</style>
