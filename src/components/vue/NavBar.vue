@@ -15,7 +15,7 @@ const navigation = [
     <div class="relative overflow-hidden">
       <div class="relative pt-6 pb-16 sm:pb-24">
         <Popover>
-          <nav class="relative flex items-center justify-between sm:h-10 md:justify-center" aria-label="Global">
+          <nav class="relative flex items-center justify-between sm:h-10 md:justify-center px-6" aria-label="Global">
             <div class="flex flex-1 items-center">
               <div class="flex w-full items-center justify-between md:w-auto">
                 <a href="#">
@@ -44,7 +44,7 @@ const navigation = [
             leave-from-class="opacity-100 scale-100" leave-to-class="opacity-0 scale-95">
             <PopoverPanel focus
               class="absolute inset-x-0 top-0 z-10 origin-top-right transform p-2 transition md:hidden">
-              <div class="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5">
+              <div class="glass overflow-hidden rounded-lg">
                 <div class="flex items-center justify-between px-5 pt-4">
                   <div>
                     <!-- <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
@@ -72,7 +72,7 @@ const navigation = [
 
         <div class="mx-auto mt-16 max-w-7xl px-4 sm:mt-24 sm:px-6">
           <div class="text-center">
-            <h1 class="text-4xl tracking-tight font-roboto text-gray-900 sm:text-5xl md:text-6xl">
+            <h1 class="text-4xl tracking-tight font-roboto sm:text-5xl md:text-6xl">
               <span
                 class="block font-medium text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-green-500">Lucas
                 Ribeiro</span>
@@ -85,3 +85,13 @@ const navigation = [
     </div>
   </div>
 </template>
+
+<style>
+.glass {
+  background: rgba(2, 5, 42, 0.06);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+</style>
