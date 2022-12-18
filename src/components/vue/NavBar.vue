@@ -46,7 +46,7 @@ const navigation = [
             leave-from-class="opacity-100 scale-100" leave-to-class="opacity-0 scale-95">
             <PopoverPanel focus
               class="absolute inset-x-0 top-0 z-10 origin-top-right transform p-2 transition md:hidden">
-              <div class="glass overflow-hidden rounded-lg">
+              <div class="glass bg-white bg-opacity-5 overflow-hidden rounded-lg">
                 <div class="flex items-center justify-between px-5 pt-4">
                   <div>
                     <!-- <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
@@ -90,7 +90,7 @@ const navigation = [
 
 <style>
 .glass {
-  background: linear-gradient(40deg, #5a21b64d 0%, #02052a4d 100%);
+  /* background: linear-gradient(40deg, #5a21b64d 0%, #02052a4d 100%); */
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
