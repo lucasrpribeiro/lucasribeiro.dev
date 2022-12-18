@@ -8,17 +8,17 @@ module.exports = {
 				roboto: ["Roboto", 'sans-serif']
 			},
 			colors: {
-				darkBlue: {
-					300: '#151C3F',
-					500: '#535295',
-					800: '#8A77D2',
-					900: '#02052a'
-				},
+				darkBlue: '#02052a',
 				swapGreen: {
-					200: '#88bfb0',
-					400: '#7d9d9f'
+					200: '#a7c735',
+					400: '#81c846'
 				}
-			}
+			},
+			textShadow: {
+        sm: '0 1px 2px var(--tw-shadow-color)',
+        DEFAULT: '0 2px 4px var(--tw-shadow-color)',
+        lg: '0 8px 16px var(--tw-shadow-color)',
+      },
 		},
 	},
 	plugins: [],

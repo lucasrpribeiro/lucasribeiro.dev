@@ -26,7 +26,7 @@ const navigation = [
                 </a>
                 <div class="-mr-2 flex items-center md:hidden">
                   <PopoverButton
-                    class="inline-flex items-center justify-center rounded-md bg-gray-50 p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                    class="inline-flex items-center justify-center rounded-md bg-gradient-to-br from-purple-900 to-indigo-900 p-2 text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-500 duration-300">
                     <span class="sr-only">Abrir o menu</span>
                     <Bars3Icon class="h-6 w-6" aria-hidden="true" />
                   </PopoverButton>
@@ -35,7 +35,9 @@ const navigation = [
             </div>
             <div class="hidden md:flex md:space-x-10">
               <a v-for="item in navigation" :key="item.name" :href="item.href"
-                class="font-medium text-gray-500 hover:text-gray-900">{{ item.name }}</a>
+                class="font-medium text-white hover:text-swapGreen-200 duration-300 neon">{{
+                    item.name
+                }}</a>
             </div>
           </nav>
 
@@ -53,7 +55,7 @@ const navigation = [
                   </div>
                   <div class="-mr-2">
                     <PopoverButton
-                      class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                      class="inline-flex items-center justify-center rounded-md bg-gradient-to-br from-purple-900 to-indigo-900 p-2 text-white hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-500">
                       <span class="sr-only">Close main menu</span>
                       <XMarkIcon class="h-6 w-6" aria-hidden="true" />
                     </PopoverButton>
@@ -61,7 +63,7 @@ const navigation = [
                 </div>
                 <div class="space-y-1 px-2 pt-2 pb-3">
                   <a v-for="item in navigation" :key="item.name" :href="item.href"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">{{
+                    class="block rounded-md px-3 py-2 text-base font-medium text-white hover:text-swapGreen-200 hover:bg-gradient-to-br from-purple-900 to-indigo-900 duration-300">{{
     item.name
                     }}</a>
                 </div>
@@ -74,7 +76,7 @@ const navigation = [
           <div class="text-center">
             <h1 class="text-4xl tracking-tight font-roboto sm:text-5xl md:text-6xl">
               <span
-                class="block font-medium text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-green-500">Lucas
+                class="block font-medium text-transparent bg-clip-text bg-gradient-to-r from-swapGreen-200 to-swapGreen-400 ">Lucas
                 Ribeiro</span>
               <span class="block">Desenvolvedor
                 Web</span>
@@ -88,10 +90,14 @@ const navigation = [
 
 <style>
 .glass {
-  background: rgba(2, 5, 42, 0.06);
+  background: linear-gradient(40deg, #5a21b64d 0%, #02052a4d 100%);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+}
+
+.neon:hover {
+  text-shadow: #a7c735 1px 0 10px;
 }
 </style>
