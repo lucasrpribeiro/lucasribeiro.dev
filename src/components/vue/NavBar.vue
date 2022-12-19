@@ -72,7 +72,7 @@ const navigation = [
           </transition>
         </Popover>
 
-        <div class="mx-auto mt-16 max-w-7xl px-4 sm:mt-24 sm:px-6">
+        <div class="mx-auto mt-16 max-w-7xl px-4 sm:mt-24 sm:px-6 block lg:hidden">
           <div class="text-center">
             <h1 class="text-4xl tracking-tight font-roboto sm:text-5xl md:text-6xl">
               <span

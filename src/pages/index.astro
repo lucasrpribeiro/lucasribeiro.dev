@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro'
 import NavBar from '../components/vue/NavBar.vue'
 import Hero from '../components/Hero.astro'
 import Technologies from '../components/Technologies.astro'
+import Widget from '../components/Widget.astro'
 ---
 
 <Layout title="Lucas Ribeiro - Welcome to my site.">
@@ -20,6 +21,7 @@ import Technologies from '../components/Technologies.astro'
     <main class="w-full">
       <NavBar client:only />
       <Hero />
+      <Widget />
       <!-- <Technologies /> -->
     </main>
   </div>
