@@ -19,7 +19,7 @@ const services = [
   },
   {
     name: 'Apresentação',
-    role: 'Não basta ser encontrado, você precisa calsar uma boa impreção!',
+    role: 'Não basta ser encontrado, você precisa causar uma boa impreção!',
     imageUrl:
       '/images/icones/apresentacao.png',
   },
