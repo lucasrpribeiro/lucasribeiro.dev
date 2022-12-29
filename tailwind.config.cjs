@@ -3,9 +3,14 @@ module.exports = {
 	content: ['./src/**/*.{astro,html,js,md,ts,vue}'],
 	theme: {
 		extend: {
+			animation: {
+        'spin-slow': 'spin 3s linear infinite',
+      },
 			fontFamily: {
 				firaCode: ["Fira Code", 'monospace'],
-				roboto: ["Roboto", 'sans-serif']
+				roboto: ["Roboto", 'sans-serif'],
+				tech : ["Share Tech Mono", 'monospace'],
+				orbitron: ["Orbitron", 'sans-serif']
 			},
 			colors: {
 				seance: {
@@ -35,6 +40,8 @@ module.exports = {
 					'900': '#050209',
 			},
 				darkBlue: '#2A2634',
+				lksGreen: '#2ecc71',
+				lksYellow: '#f1c40f',
 			},
 			textShadow: {
         sm: '0 1px 2px var(--tw-shadow-color)',

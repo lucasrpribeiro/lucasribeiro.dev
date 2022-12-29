@@ -16,12 +16,12 @@ const { title } = Astro.props
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Roboto:wght@100;400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Orbitron:wght@400;700&family=Roboto:wght@100;400;500;700;900&family=Share+Tech+Mono&display=swap"
       rel="stylesheet"
     />
     <title>{title}</title>
   </head>
-  <body class="bg-haiti-900 text-white">
+  <body class="bg-gradient-to-tr from-seance-900 to-haiti-900 text-white">
     <slot />
   </body>
 
@@ -30,5 +30,6 @@ const { title } = Astro.props
 <style is:global>
   :root {
     font-family: 'Fira Code', monospace;
+    scroll-behavior: smooth;
   }
 </style>
