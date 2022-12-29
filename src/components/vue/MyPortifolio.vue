@@ -14,12 +14,12 @@ const projects = [
 </script>
 
 <template>
-  <div class="bg-white">
+  <div>
     <div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8 lg:py-24">
       <div class="space-y-12">
         <div class="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
-          <h2 class="text-black text-3xl font-bold tracking-tight sm:text-4xl">Meu Portifolio</h2>
-          <p class="text-xl text-gray-500">Aqui você encontrará alguns dos sites que desenvolvi durante minha carreira.</p>
+          <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Meu Portifolio</h2>
+          <p class="text-xl">Aqui você encontrará alguns dos sites que desenvolvi durante minha carreira.</p>
         </div>
         <ul role="list" class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
           <li v-for="project in projects" :key="project.name">
@@ -31,7 +31,7 @@ const projects = [
               <div class="space-y-2">
                 <div class="space-y-1 text-lg font-medium leading-6">
                   <h3>{{ project.name }}</h3>
-                  <p class="text-indigo-600">{{ project.role }}</p>
+                  <p class="text-haiti-500">{{ project.role }}</p>
                 </div>
                 <ul role="list" class="flex space-x-5">
                   <li>

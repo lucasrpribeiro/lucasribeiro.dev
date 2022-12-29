@@ -11,7 +11,7 @@ const navigation = [
 </script>
 
 <template>
-  <div class="bg-gray-50">
+  <div>
     <div class="relative overflow-hidden">
       <div class="relative pt-6 pb-16 sm:pb-24">
         <Popover>
@@ -32,11 +32,11 @@ const navigation = [
                 </div>
               </div>
               <div class="hidden md:flex md:space-x-10">
-                <a v-for="item in navigation" :key="item.name" :href="item.href" class="font-medium text-gray-500 hover:text-gray-900">{{ item.name }}</a>
+                <a v-for="item in navigation" :key="item.name" :href="item.href" class="font-medium hover:text-gray-200 duration-300">{{ item.name }}</a>
               </div>
               <div class="hidden md:absolute md:inset-y-0 md:right-0 md:flex md:items-center md:justify-end">
                 <span class="inline-flex rounded-md shadow">
-                  <a href="#" class="inline-flex items-center rounded-md border border-transparent bg-white px-4 py-2 text-base font-medium text-indigo-600 hover:text-indigo-500">Log in</a>
+                  <a href="#" class="inline-flex items-center rounded-md border border-transparent bg-gradient-to-r from-seance-500 to-haiti-500 px-4 py-2 text-base font-medium hover:shadow-lg hover:shadow-haiti-500/90 duration-300">Entre em contato!</a>
                 </span>
               </div>
             </nav>
@@ -67,11 +67,11 @@ const navigation = [
         <!-- Hero -->
         <div class="mx-auto mt-16 max-w-7xl px-4 sm:mt-24 sm:px-6">
           <div class="text-center">
-            <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-              <span class="block">Data to enrich your</span>
-              <span class="block text-indigo-600">online business</span>
+            <h1 class="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
+              <span class="block">Olá, eu sou Lucas!</span>
+              <span class="block">Programador Web</span>
             </h1>
-            <p class="mx-auto mt-3 max-w-md text-base text-gray-500 sm:text-lg md:mt-5 md:max-w-3xl md:text-xl">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+            <p class="mx-auto mt-3 max-w-md text-base sm:text-lg md:mt-5 md:max-w-3xl md:text-xl">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
           </div>
         </div>
       </div>

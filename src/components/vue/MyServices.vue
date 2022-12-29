@@ -11,12 +11,12 @@ const services = [
 </script>
 
 <template>
-  <div class="bg-white">
+  <div>
     <div class="mx-auto max-w-7xl py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24">
       <div class="space-y-8 sm:space-y-12">
         <div class="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
-          <h2 class="text-black text-3xl font-bold tracking-tight sm:text-4xl">Serviços</h2>
-          <p class="text-xl text-gray-500">Como eu posso te ajudar a ser encontrado.</p>
+          <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Serviços</h2>
+          <p class="text-xl">Como eu posso te ajudar a ser encontrado.</p>
         </div>
         <ul role="list" class="mx-auto grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-4 md:gap-x-6 lg:max-w-5xl lg:gap-x-8 lg:gap-y-12 xl:grid-cols-6">
           <li v-for="service in services" :key="service.name">
@@ -25,7 +25,7 @@ const services = [
               <div class="space-y-2">
                 <div class="text-xs font-medium lg:text-sm">
                   <h3>{{ service.name }}</h3>
-                  <p class="text-indigo-600">{{ service.role }}</p>
+                  <p class="text-haiti-500">{{ service.role }}</p>
                 </div>
               </div>
             </div>
