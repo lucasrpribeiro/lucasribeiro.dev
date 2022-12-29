@@ -1,30 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import NavBar from '../components/vue/NavBar.vue'
-import Hero from '../components/Hero.astro'
-import Technologies from '../components/Technologies.astro'
-import Widget from '../components/Widget.astro'
+import HeroSection from '../components/vue/HeroSection.vue'
+import MyPortifolio from '../components/vue/MyPortifolio.vue'
+import MyServices from '../components/vue/MyServices.vue'
+import MyTimeline from '../components/MyTimeline.astro'
+import CTA from '../components/CTA.astro'
 ---
 
 <Layout title="Lucas Ribeiro - Welcome to my site.">
-  <div
-    class="relative container mx-auto flex flex-col items-center justify-center"
-  >
-    <div
-      class="fixed -top-28 -right-28 blur-[300px] rounded-full bg-gradient-to-r from-yellow-400 to-yellow-700 w-1/3 h-72"
-    >
-    </div>
-    <div
-      class="fixed top-96 -left-28 blur-[300px] rounded-full bg-gradient-to-r from-swapGreen-400 to-green-700 w-1/3 h-72"
-    >
-    </div>
-    <main class="w-full">
-      <NavBar client:only />
-      <Hero />
-      <Widget />
-      <!-- <Technologies /> -->
-    </main>
-  </div>
+  <main>
+    <HeroSection client:only />
+    <MyServices />
+    <MyPortifolio />
+    <MyTimeline />
+    <CTA />
+  </main>
 </Layout>
 
 <style>

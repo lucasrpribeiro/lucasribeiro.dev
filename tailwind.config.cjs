@@ -4,15 +4,37 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				montserrat: ["Montserrat", 'sans-serif'],
+				firaCode: ["Fira Code", 'monospace'],
 				roboto: ["Roboto", 'sans-serif']
 			},
 			colors: {
-				darkBlue: '#02052a',
-				swapGreen: {
-					200: '#a7c735',
-					400: '#81c846'
-				}
+				seance: {
+					DEFAULT: '#451B66',
+					'50': '#F8E4F6',
+					'100': '#F2CCF0',
+					'200': '#E29CE5',
+					'300': '#CB6CD8',
+					'400': '#AE3BCB',
+					'500': '#7E2A9F',
+					'600': '#602383',
+					'700': '#451B66',
+					'800': '#2D144A',
+					'900': '#190C2E'
+				},
+				haiti: {
+					DEFAULT: '#320f60',
+					'50': '#f3f0fd',
+					'100': '#d9cbfc',
+					'200': '#b497f8',
+					'300': '#8c5bed',
+					'400': '#6a29d8',
+					'500': '#5210bc',
+					'600': '#440a97',
+					'700': '#3a0d78',
+					'800': '#320f60',
+					'900': '#050209',
+			},
+				darkBlue: '#2A2634',
 			},
 			textShadow: {
         sm: '0 1px 2px var(--tw-shadow-color)',
@@ -21,5 +43,7 @@ module.exports = {
       },
 		},
 	},
-	plugins: [],
+	plugins: [
+		require('@tailwindcss/aspect-ratio')
+	],
 }
