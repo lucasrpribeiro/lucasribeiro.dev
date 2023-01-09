@@ -5,6 +5,7 @@ module.exports = {
 		extend: {
 			animation: {
         'spin-slow': 'spin 3s linear infinite',
+				'pulse-slow': 'pulse 5s linear infinite',
       },
 			fontFamily: {
 				firaCode: ["Fira Code", 'monospace'],
