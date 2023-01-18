@@ -20,16 +20,24 @@ const { title } = Astro.props
       rel="stylesheet"
     />
     <title>{title}</title>
-  </head>x
-  <body class="bg-gradient-to-tr from-zinc-900 to-zinc-800 text-white">
+  </head>
+  <body class="bg-zinc-900 text-gray-100">
     <slot />
   </body>
 
-  <!--  ¯\_( ͡❛ ͜ʖ ͡❛)_/¯  -->
+  <!-- I am ¯\_( ͡❛ ͜ʖ ͡❛)_/¯ LKs -->
 </html>
 <style is:global>
   :root {
-    font-family: 'Fira Code', monospace;
+    font-family: 'Roboto', monospace;
     scroll-behavior: smooth;
+  }
+  ::selection {
+    background: #06b6d4;
+    color: #f4f4f5;
+  }
+  ::-moz-selection {
+    background: #06b6d4;
+    color: #f4f4f5;
   }
 </style>
