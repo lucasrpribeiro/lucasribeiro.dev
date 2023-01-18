@@ -23,7 +23,7 @@ const projects = [
         </div>
         <ul role="list" class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
           <li v-for="project in projects" :key="project.name">
-            <a href="https://paranavai.app/" target="_blank" alt="Site do Paranavai.app" class="group block space-y-4 bg-zinc-800 p-2 rounded-xl hover:shadow-xl hover:bg-zinc-700/40 hover:border hover:border-cyan-500 lg:hover:scale-110 hover:duration-300 cursor-pointer">
+            <a href="https://paranavai.app/" target="_blank" alt="Site do Paranavai.app" class="group block space-y-4 bg-zinc-800 p-2 rounded-xl hover:shadow-xl hover:bg-zinc-700/40 hover:border hover:border-cyan-500 lg:hover:scale-110 duration-300 cursor-pointer">
               <div class="aspect-w-3 aspect-h-2">
                 <img class="rounded-lg object-cover shadow-lg" :src="project.imageUrl" alt="" />
               </div>
