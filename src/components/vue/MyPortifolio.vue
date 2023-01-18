@@ -1,11 +1,11 @@
 <script setup>
 const projects = [
   {
-    name: 'Lindsay Walton',
-    role: 'Front-end Developer',
+    name: 'Paranavai.app',
+    role: 'Veja aqui!',
     description: '',
     imageUrl:
-      'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+      '/images/portifolio-pvaiapp.png',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
@@ -23,18 +23,18 @@ const projects = [
         </div>
         <ul role="list" class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
           <li v-for="project in projects" :key="project.name">
-            <div class="space-y-4 bg-zinc-800 p-2 rounded-xl hover:shadow-xl lg:hover:scale-110 hover:duration-300 cursor-pointer">
+            <a href="https://paranavai.app/" target="_blank" alt="Site do Paranavai.app" class="group block space-y-4 bg-zinc-800 p-2 rounded-xl hover:shadow-xl hover:bg-zinc-700/40 hover:border hover:border-cyan-500 lg:hover:scale-110 hover:duration-300 cursor-pointer">
               <div class="aspect-w-3 aspect-h-2">
                 <img class="rounded-lg object-cover shadow-lg" :src="project.imageUrl" alt="" />
               </div>
 
               <div class="space-y-2">
                 <div class="space-y-1 text-lg font-medium leading-6">
-                  <h3>{{ project.name }}</h3>
+                  <h3 class="group-hover:text-cyan-500">{{ project.name }}</h3>
                   <p>{{ project.role }}</p>
                 </div>
               </div>
-            </div>
+            </a>
           </li>
         </ul>
       </div>
