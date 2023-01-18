@@ -8,6 +8,12 @@ const navigation = [
   { name: 'Portifolio', href: '/#portifolio' },
   { name: 'Caontato', href: '/#contact' },
 ]
+
+const count = () => {
+  for(let n = 0; n <= 548; n++) {
+    return n + 1
+  }
+}
 </script>
 
 <template>
