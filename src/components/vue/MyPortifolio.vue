@@ -1,13 +1,39 @@
 <script setup>
 const projects = [
   {
+    name: 'Hunter.fm',
+    role: 'A sua rádio online! Desenvolvida para te entregar suas músicas favoritas de maneira eficiente.',
+    link: 'https://hunter.fm/',
+    imageUrl:
+      '/images/portifolio-hunter.png',
+  },
+  {
+    name: 'Lenyeg',
+    role: 'Desenvolvemos produtos digitais,enquanto capacitamos novos profissionais.',
+    link: 'https://lenyeg.com.br',
+    imageUrl:
+      '/images/portifolio-lenyeg.png',
+  },
+  {
     name: 'Paranavai.app',
-    role: 'Veja aqui!',
-    description: '',
+    role: 'Vá além da presença física e seja encontrado por quem precisa de você.',
+    link: 'https://paranavai.app',
     imageUrl:
       '/images/portifolio-pvaiapp.png',
-    twitterUrl: '#',
-    linkedinUrl: '#',
+  },
+  {
+    name: 'OsmarJr - Advogado',
+    role: 'Advogado especialista em direito criminal e direito famíliar.',
+    link: 'https://osmarjr.adv.br',
+    imageUrl:
+      '/images/portifolio-osmar.png',
+  },
+  {
+    name: 'iEasy',
+    role: 'A maior do mundo no catálogo de aparelhos Apple no atacado!',
+    link: 'https://ieasyatacado.com/',
+    imageUrl:
+      '/images/portifolio-ieasy.png',
   },
   // More projects...
 ]
@@ -23,15 +49,16 @@ const projects = [
         </div>
         <ul role="list" class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
           <li v-for="project in projects" :key="project.name">
-            <a href="https://paranavai.app/" target="_blank" alt="Site do Paranavai.app" class="group block space-y-4 bg-zinc-800 p-2 rounded-xl hover:shadow-xl hover:bg-zinc-700/40 hover:border hover:border-cyan-500 lg:hover:scale-110 duration-300 cursor-pointer">
+            <a :href="project.link" target="_blank" alt="Site do Paranavai.app" class="group 2xl:min-h-[403px] block space-y-4 bg-zinc-800 p-2 rounded-xl hover:shadow-xl hover:bg-zinc-700/40 hover:border hover:border-cyan-500 lg:hover:scale-110 duration-300 cursor-pointer">
               <div class="aspect-w-3 aspect-h-2">
-                <img class="rounded-lg object-cover shadow-lg" :src="project.imageUrl" alt="" />
+                <img draggable="false" class="rounded-lg object-cover shadow-lg" :src="project.imageUrl" alt="Paranavai.app" />
               </div>
 
-              <div class="space-y-2">
-                <div class="space-y-1 text-lg font-medium leading-6">
-                  <h3 class="group-hover:text-cyan-500">{{ project.name }}</h3>
+              <div class="space-y-2 text-start">
+                <div class="space-y-1 leading-6">
+                  <h3 class="group-hover:text-cyan-500 text-lg font-medium ">{{ project.name }}</h3>
                   <p>{{ project.role }}</p>
+                  <!-- <span class="text-sm">{{ project.tech }}</span> -->
                 </div>
               </div>
             </a>
