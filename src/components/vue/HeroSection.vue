@@ -77,7 +77,10 @@ const count = () => {
               <span class="block">Olá, eu sou <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-cyan-500">Lucas!</span></span>
               <span class="block">Programador Web</span>
             </h1>
-            <p class="mt-3 max-w-md text-base sm:text-lg md:mt-5 md:max-w-3xl md:text-3xl">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+            <p class="mt-3 max-w-md text-sm sm:text-base md:mt-10 md:max-w-3xl md:text-3xl">Como desenvolvedor web especializado em <span class="text-cyan-500 font-bold">SEO</span> e <span class="text-cyan-500 font-bold">performance</span>, posso ajudar seu negócio a alcançar novos patamares de sucesso online.</p>
+            <p class="mt-3 max-w-md text-sm sm:text-base md:mt-5 md:max-w-3xl md:text-3xl">
+              Com minha abordagem de otimização de mecanismos de busca, posso <span class="text-cyan-500 font-bold">melhorar o seu ranking</span> nos resultados de busca, aumentando seu tráfego e alcançando <span class="text-cyan-500 font-bold">novos clientes</span>. 
+            </p>
           </div>
           <section class="flex flex-col items-center justify-center py-6 flex-1 lg:max-w-[340px] xl:max-w-[500px]">
           <section>
