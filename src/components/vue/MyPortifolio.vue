@@ -45,7 +45,10 @@ const projects = [
       <div class="space-y-12">
         <div class="space-y-5 sm:space-y-4">
           <h2 class="text-3xl font-bold font-orbitron text-transparent bg-clip-text bg-cyan-500 tracking-tight sm:text-4xl">Meu Portifolio</h2>
-          <p class="text-xl">Aqui você encontrará alguns dos sites que desenvolvi durante minha carreira.</p>
+          <p class="text-xl">Este é o meu portfólio, onde você pode encontrar uma coleção de meus trabalhos recentes e relevantes.</p>
+          <p class="text-xl">
+            Sinta-se livre para navegar e verificar meus trabalhos, e não hesite em me contatar se tiver alguma dúvida ou deseja discutir um projeto futuro.
+          </p>
         </div>
         <ul role="list" class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
           <li v-for="project in projects" :key="project.name">

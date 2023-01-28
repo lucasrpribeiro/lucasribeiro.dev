@@ -2,24 +2,24 @@
 const services = [
   {
     name: 'Otimização de Busca (SEO)',
-    role: 'Otimização para motores de busca para deixar seu site na primeira página do Google convertendo muito mais resultados.',
+    role: 'SEO é a prática de otimizar um site para que ele seja facilmente encontrado e indexado pelos mecanismos de busca.',
     imageUrl:
       'icones/lupa.png',
   },
   {
     name: 'Velocidade',
-    role: 'Não perca clientes por conta da demora em carregar o seu site!',
+    role: 'Melhoria da experiência do usuário: pessoas tendem a desistir de um site que leva muito tempo para carregar.',
     imageUrl:
       'icones/cronometro.png',
   },  {
     name: 'Design',
-    role: 'Utilize o design como diferencial competitivo, gerando experiências inovadoras e criativas a seus clientes e consumidores.',
+    role: 'Um design intuitivo pode ajudar os visitantes a encontrar facilmente o que eles estão procurando no seu site e, assim, aumentar a chance de conversão.',
     imageUrl:
       'icones/apresentacao.png',
   },
   {
     name: 'Apresentação',
-    role: 'Entregue uma boa impressão aí seu cliente, com sites modernos e adaptados as mais diversas telas.',
+    role: 'A aparência do seu site é a primeira coisa que as pessoas veem, criar uma boa primeira impressão pode aumentar a confiança do usuário no seu negócio.',
     imageUrl:
       'icones/click.png',
   },
@@ -33,7 +33,7 @@ const services = [
       <div class="space-y-8 sm:space-y-12">
         <div class="space-y-5 sm:mx-auto sm:space-y-3">
           <h2 class="text-3xl font-bold font-orbitron text-transparent bg-clip-text bg-cyan-500 tracking-tight sm:text-4xl">Serviços</h2>
-          <p class="text-xl">Como eu posso te ajudar a ser encontrado.</p>
+          <p class="text-xl">Como eu posso te ajudar a conseguir mais clientes.</p>
         </div>
         <ul role="list" class="mx-auto grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-4 md:gap-x-6 lg:gap-x-12 lg:gap-y-12">
           <li v-for="service in services" :key="service.name">
