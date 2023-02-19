@@ -200,7 +200,7 @@ const navigation = [
             px-4
           "
         >
-          <div class="flex flex-col items-center justify-center text-center lg:text-left flex-1">
+          <div class="flex flex-col items-center justify-center text-center lg:text-left flex-1 lg:items-start">
             <h1
               class="
                 font-orbitron
@@ -236,6 +236,7 @@ const navigation = [
               href="#"
               class="
               mt-4
+              lg:mt-10
               block
               bg-customBlue
               w-44
