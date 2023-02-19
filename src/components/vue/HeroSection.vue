@@ -23,7 +23,7 @@ const navigation = [
                 items-center
                 justify-between
                 sm:h-10
-                md:justify-center
+                md:justify-end
               "
               aria-label="Global"
             >
@@ -68,7 +68,7 @@ const navigation = [
                   v-for="item in navigation"
                   :key="item.name"
                   :href="item.href"
-                  class="font-medium hover:text-teal-500 duration-300"
+                  class="font-medium hover:text-customBlue duration-300"
                   >{{ item.name }}</a
                 >
               </div>
@@ -82,30 +82,7 @@ const navigation = [
                   md:items-center
                   md:justify-end
                 "
-              >
-                <span class="inline-flex rounded-md shadow">
-                  <a
-                    href="#"
-                    class="
-                      inline-flex
-                      items-center
-                      rounded-md
-                      border border-transparent
-                      bg-gradient-to-r
-                      from-teal-500
-                      to-cyan-500
-                      px-4
-                      py-2
-                      text-base
-                      font-medium
-                      hover:shadow-lg hover:scale-110
-                      duration-300
-                      text-gray-50
-                    "
-                    >Entre em contato!</a
-                  >
-                </span>
-              </div>
+              ></div>
             </nav>
           </div>
           <!-- Mobile Menu Panel -->
@@ -123,24 +100,14 @@ const navigation = [
                 absolute
                 inset-x-0
                 top-0
-                z-10
+                z-30
                 origin-top-right
                 transform
                 transition
                 md:hidden
               "
             >
-              <div
-                class="
-                  overflow-hidden
-                  rounded-lg
-                  bg-haiti-900
-                  shadow-xl
-                  bg-clip-padding
-                  backdrop-filter backdrop-blur-md
-                  bg-opacity-50
-                "
-              >
+              <div class="overflow-hidden">
                 <div class="flex items-center justify-between p-4">
                   <div>
                     <img
@@ -156,10 +123,12 @@ const navigation = [
                         items-center
                         justify-center
                         rounded-md
-                        bg-white bg-opacity-5
+                        bg-clip-padding
+                        backdrop-filter backdrop-blur-md
+                        bg-opacity-[0.02] bg-white
                         p-2
                         text-white
-                        focus:outline-none focus:ring-0 focus:ring-customBlue
+                        focus:outline-none focus:ring-0
                         duration-300
                       "
                     >
@@ -168,7 +137,19 @@ const navigation = [
                     </PopoverButton>
                   </div>
                 </div>
-                <div class="space-y-1 px-2 pt-2 pb-3">
+                <div
+                  class="
+                    bg-[#121214E5]
+                    shadow-xl
+                    bg-clip-padding
+                    backdrop-filter backdrop-blur-md
+                    bg-opacity-80
+                    space-y-1
+                    p-4
+                    mx-4
+                    rounded-lg
+                  "
+                >
                   <a
                     v-for="item in navigation"
                     :key="item.name"
@@ -176,8 +157,11 @@ const navigation = [
                     class="
                       block
                       rounded-md
-                      px-3
-                      py-2
+                      px-5
+                      py-3
+                      bg-white bg-clip-padding
+                      backdrop-filter backdrop-blur-md
+                      bg-opacity-5
                       text-base
                       font-medium
                       duration-300
@@ -185,18 +169,18 @@ const navigation = [
                     >{{ item.name }}</a
                   >
                   <a
-                  href="#"
-                  class="
-                    block
-                    bg-customBlue
-                    px-5
-                    py-3
-                    text-center
-                    font-medium
-                    rounded-lg
-                  "
-                  >Entre em contato!</a
-                >
+                    href="#"
+                    class="
+                      block
+                      bg-customBlue
+                      px-5
+                      py-3
+                      text-center
+                      font-medium
+                      rounded-lg
+                    "
+                    >Entre em contato!</a
+                  >
                 </div>
               </div>
             </PopoverPanel>
@@ -223,18 +207,14 @@ const navigation = [
                 text-4xl
                 font-bold
                 tracking-tight
-                sm:text-5xl
-                md:text-6xl
+                lg:text-6xl
               "
             >
               <span class="block"
                 >Olá, eu sou
                 <span
                   class="
-                    text-transparent
-                    bg-clip-text bg-gradient-to-r
-                    from-teal-500
-                    to-cyan-500
+                    text-customBlue
                   "
                   >Lucas!</span
                 ></span
@@ -250,26 +230,7 @@ const navigation = [
                 md:mt-10 md:max-w-3xl md:text-3xl
               "
             >
-              Como desenvolvedor web especializado em
-              <span class="text-cyan-500 font-bold">SEO</span> e
-              <span class="text-cyan-500 font-bold">performance</span>, posso
-              ajudar seu negócio a alcançar novos patamares de sucesso online.
-            </p>
-            <p
-              class="
-                mt-3
-                max-w-md
-                text-sm
-                sm:text-base
-                md:mt-5 md:max-w-3xl md:text-3xl
-              "
-            >
-              Com minha abordagem de otimização de mecanismos de busca, posso
-              <span class="text-cyan-500 font-bold"
-                >melhorar o seu ranking</span
-              >
-              nos resultados de busca, aumentando seu tráfego e alcançando
-              <span class="text-cyan-500 font-bold">novos clientes</span>.
+            Como desenvolvedor web especializado em SEO e performance, posso ajudar seu negócio a alcançar novos patamares de sucesso online.
             </p>
           </div>
           <section
