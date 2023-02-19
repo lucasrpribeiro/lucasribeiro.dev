@@ -13,7 +13,7 @@ const navigation = [
 <template>
   <div>
     <div class="relative overflow-hidden">
-      <div class="relative pb-16 sm:pb-24">
+      <div class="relative sm:pb-24">
         <Popover>
           <div class="mx-auto container p-4">
             <nav
@@ -200,7 +200,7 @@ const navigation = [
             px-4
           "
         >
-          <div class="text-center lg:text-left flex-1">
+          <div class="flex flex-col items-center justify-center text-center lg:text-left flex-1">
             <h1
               class="
                 font-orbitron
@@ -232,6 +232,21 @@ const navigation = [
             >
             Como desenvolvedor web especializado em SEO e performance, posso ajudar seu negócio a alcançar novos patamares de sucesso online.
             </p>
+            <a
+              href="#"
+              class="
+              mt-4
+              block
+              bg-customBlue
+              w-44
+              px-5
+              py-3
+              text-center
+              font-medium
+              rounded-lg
+            "
+            >Entre em contato!</a
+          >
           </div>
           <section
             class="
@@ -246,11 +261,10 @@ const navigation = [
           >
             <section>
               <picture class="relative">
-                <!-- <source srcset="" media="(min-width: 900px)" />
-              <source srcset="" media="(min-width: 600px)" /> -->
+                <source srcset="/images/hero-mobile.png" width="343" media="(max-width: 900px)" />
                 <img
                   draggable="false"
-                  src="/images/lucas.png"
+                  src="/images/hero-desktop.png"
                   alt="Lucas Ribeiro"
                   width="1024"
                   class="relative z-10"
@@ -260,58 +274,15 @@ const navigation = [
                     absolute
                     top-0
                     right-2
-                    w-[500px]
-                    h-[500px]
+                    w-[400px]
+                    h-[400px]
                     rounded-full
-                    bg-gradient-to-t
-                    from-teal-500
-                    to-cyan-500
+                    bg-customBlue
+                    bg-opacity-10
                     blur-[100px]
-                    animate-pulse-slow
-                    hidden
-                    lg:block
                   "
                 ></div>
               </picture>
-            </section>
-            <section
-              class="
-                relative
-                -mt-11
-                pt-9
-                pb-4
-                w-full
-                bg-haiti-900
-                rounded-xl
-                bg-clip-padding
-                backdrop-filter backdrop-blur-md
-                bg-opacity-30
-                text-6xl
-                flex flex-col
-                items-center
-                justify-center
-                font-orbitron
-                gap-4
-                z-20
-              "
-            >
-              <div>
-                <span>578</span>
-              </div>
-              <span
-                class="flex gap-1 justify-center items-center text-base italic"
-                ><span
-                  ><svg width="32" height="32" viewBox="0 0 24 24" class="w-12">
-                    <path
-                      fill="currentColor"
-                      class="text-cyan-500"
-                      d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2a2 2 0 0 0 2-2V5c0-1.11-.89-2-2-2zm0 5h-2V5h2v3zM4 19h16v2H4z"
-                    />
-                  </svg>
-                </span>
-                Canecas de café!</span
-              >
-              <!-- <img src="/images/3d-clock.png" class="absolute -bottom-12 w-24"/> -->
             </section>
           </section>
         </div>
