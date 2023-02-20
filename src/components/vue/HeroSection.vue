@@ -194,7 +194,7 @@ const navigation = [
             items-center
             justify-center
             gap-6
-            lg:flex-row
+            xl:flex-row
             mx-auto
             pt-5
             px-4
@@ -206,9 +206,9 @@ const navigation = [
               items-center
               justify-center
               text-center
-              lg:text-left
+              xl:text-left
               flex-1
-              lg:items-start
+              xl:items-start
             "
           >
             <h1
@@ -225,15 +225,7 @@ const navigation = [
               >
               <span class="block">Programador Web</span>
             </h1>
-            <p
-              class="
-                mt-3
-                max-w-md
-                text-sm
-                sm:text-base
-                md:mt-10 md:max-w-3xl md:text-3xl
-              "
-            >
+            <p class="mt-3 max-w-md md:mt-10 md:max-w-3xl md:text-3xl">
               Como desenvolvedor web especializado em SEO e performance, posso
               ajudar seu negócio a alcançar novos patamares de sucesso online.
             </p>
@@ -243,27 +235,19 @@ const navigation = [
                 mt-4
                 lg:mt-10
                 block
-                bg-customBlue
                 w-44
                 px-5
                 py-3
                 text-center
                 font-medium
                 rounded-lg
+                bg-customBlue
               "
               >Entre em contato!</a
             >
           </div>
           <section
-            class="
-              flex flex-col
-              items-center
-              justify-center
-              py-6
-              flex-1
-              lg:max-w-[340px]
-              xl:max-w-[500px]
-            "
+            class="flex flex-col items-center justify-center py-6 flex-1"
           >
             <section>
               <picture class="relative">
