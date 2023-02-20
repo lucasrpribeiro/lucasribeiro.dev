@@ -13,7 +13,8 @@ module.exports = {
 			},
 			colors: {
 				customBlue: '#1C56B8',
-				primary: '#0B0B0D'
+				primary: '#0B0B0D',
+				secondary: '#121214'
 			}
 		}
 	},
