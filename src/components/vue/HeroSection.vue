@@ -15,7 +15,7 @@ const navigation = [
     <div class="relative overflow-hidden">
       <div class="relative sm:pb-24">
         <Popover>
-          <div class="mx-auto container p-4">
+          <div class="mx-auto lg:container p-4">
             <nav
               class="
                 relative
@@ -200,7 +200,17 @@ const navigation = [
             px-4
           "
         >
-          <div class="flex flex-col items-center justify-center text-center lg:text-left flex-1 lg:items-start">
+          <div
+            class="
+              flex flex-col
+              items-center
+              justify-center
+              text-center
+              lg:text-left
+              flex-1
+              lg:items-start
+            "
+          >
             <h1
               class="
                 font-orbitron
@@ -211,13 +221,7 @@ const navigation = [
               "
             >
               <span class="block"
-                >Olá, eu sou
-                <span
-                  class="
-                    text-customBlue
-                  "
-                  >Lucas!</span
-                ></span
+                >Olá, eu sou <span class="text-customBlue">Lucas!</span></span
               >
               <span class="block">Programador Web</span>
             </h1>
@@ -230,24 +234,25 @@ const navigation = [
                 md:mt-10 md:max-w-3xl md:text-3xl
               "
             >
-            Como desenvolvedor web especializado em SEO e performance, posso ajudar seu negócio a alcançar novos patamares de sucesso online.
+              Como desenvolvedor web especializado em SEO e performance, posso
+              ajudar seu negócio a alcançar novos patamares de sucesso online.
             </p>
             <a
               href="#"
               class="
-              mt-4
-              lg:mt-10
-              block
-              bg-customBlue
-              w-44
-              px-5
-              py-3
-              text-center
-              font-medium
-              rounded-lg
-            "
-            >Entre em contato!</a
-          >
+                mt-4
+                lg:mt-10
+                block
+                bg-customBlue
+                w-44
+                px-5
+                py-3
+                text-center
+                font-medium
+                rounded-lg
+              "
+              >Entre em contato!</a
+            >
           </div>
           <section
             class="
@@ -262,7 +267,11 @@ const navigation = [
           >
             <section>
               <picture class="relative">
-                <source srcset="/images/hero-mobile.png" width="343" media="(max-width: 900px)" />
+                <source
+                  srcset="/images/hero-mobile.png"
+                  width="343"
+                  media="(max-width: 900px)"
+                />
                 <img
                   draggable="false"
                   src="/images/hero-desktop.png"
@@ -278,8 +287,7 @@ const navigation = [
                     w-[400px]
                     h-[400px]
                     rounded-full
-                    bg-customBlue
-                    bg-opacity-10
+                    bg-customBlue bg-opacity-10
                     blur-[100px]
                   "
                 ></div>
