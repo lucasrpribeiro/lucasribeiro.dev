@@ -11,7 +11,7 @@ const navigation = [
 </script>
 
 <template>
-  <div>
+  <div class="bg-primary">
     <div class="relative overflow-hidden">
       <div class="relative">
         <Popover>
