@@ -13,7 +13,7 @@ const navigation = [
 <template>
   <div>
     <div class="relative overflow-hidden">
-      <div class="relative sm:pb-24">
+      <div class="relative">
         <Popover>
           <div class="mx-auto lg:container p-4">
             <nav
@@ -215,7 +215,7 @@ const navigation = [
               class="
                 font-orbitron
                 text-4xl
-                font-bold
+                font-black
                 tracking-tight
                 lg:text-6xl
               "
@@ -254,7 +254,7 @@ const navigation = [
                 <source
                   srcset="/images/hero-mobile.png"
                   width="343"
-                  media="(max-width: 900px)"
+                  media="(max-width: 765px)"
                 />
                 <img
                   draggable="false"
@@ -265,14 +265,17 @@ const navigation = [
                 />
                 <div
                   class="
-                    absolute
-                    top-0
-                    right-2
-                    w-[400px]
-                    h-[400px]
+                    w-72
+                    h-72
+                    md:w-[500px] md:h-[500px]
                     rounded-full
-                    bg-customBlue bg-opacity-10
+                    bg-customBlue bg-opacity-40
                     blur-[100px]
+                    absolute
+                    top-[12rem]
+                    right-[2rem]
+                    md:top-[23rem] md:right-[6.72rem]
+                    lg:top-[22rem] lg:right-[3.71rem]
                   "
                 ></div>
               </picture>
