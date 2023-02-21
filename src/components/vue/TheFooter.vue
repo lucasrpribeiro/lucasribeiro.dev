@@ -26,7 +26,7 @@ const links = [
   <section class="border-t border-gray-600 pt-4 w-11/12 text-center">
     <span>
       Design por <a href="" target="_blank" alt="Pedro Henrique" class="font-bold">Pedro Henrique</a>  
-      & desenvolvido por <a href="https://www.linkedin.com/in/lucasribeirolr/" target="_blank" alt="Lucas Ribeiro" class="font-bold"></a> Lucas Ribeiro
+      & desenvolvido por <a href="https://www.linkedin.com/in/lucasribeirolr/" target="_blank" alt="Lucas Ribeiro" class="font-bold">Lucas Ribeiro</a>
     </span>
   </section>
 </footer>
