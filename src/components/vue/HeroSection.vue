@@ -68,7 +68,7 @@ const navigation = [
                   v-for="item in navigation"
                   :key="item.name"
                   :href="item.href"
-                  class="font-medium hover:text-customBlue duration-300"
+                  class="font-medium hover:text-blue-600 duration-300"
                   >{{ item.name }}</a
                 >
               </div>
@@ -242,6 +242,8 @@ const navigation = [
                 font-medium
                 rounded-lg
                 bg-customBlue
+                hover:bg-blue-600
+                duration-300
               "
               >Entre em contato!</a
             >
