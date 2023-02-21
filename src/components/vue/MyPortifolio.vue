@@ -44,11 +44,8 @@ const projects = [
     <div class="container text-center mx-auto py-12 px-4 sm:px-6 lg:px-8 lg:py-24">
       <div class="space-y-12">
         <div class="space-y-5 sm:space-y-4">
-          <h2 class="text-3xl font-bold font-orbitron text-transparent bg-clip-text bg-cyan-500 tracking-tight sm:text-4xl">Meu Portifolio</h2>
-          <p class="text-xl">Este é o meu portfólio, onde você pode encontrar uma coleção de meus trabalhos recentes e relevantes.</p>
-          <p class="text-xl">
-            Sinta-se livre para navegar e verificar meus trabalhos, e não hesite em me contatar se tiver alguma dúvida ou deseja discutir um projeto futuro.
-          </p>
+          <span class="text-lg font-medium border border-gray-500 p-2 px-4 rounded-3xl">Meu Portifolio</span>
+          <p class="text-[32px] font-black">Confira alguns dos meus trabalhos recentes.</p>
         </div>
         <ul role="list" class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
           <li v-for="project in projects" :key="project.name">
