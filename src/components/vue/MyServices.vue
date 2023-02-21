@@ -70,7 +70,7 @@ const services = [
   </div>
 </template>
 
-<style>
+<style scoped>
 #services {
   background: radial-gradient(90.69% 50% at 50% 100%, rgba(28, 86, 184, 0.25) 0%, rgba(0, 0, 0, 0) 100%), #121214;
 }

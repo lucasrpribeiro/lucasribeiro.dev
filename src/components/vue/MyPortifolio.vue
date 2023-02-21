@@ -40,8 +40,8 @@ const projects = [
 </script>
 
 <template>
-  <div id="portifolio" class="container mx-auto py-12 px-4 text-center sm:px-6">
-    <div class="mx-auto py-12 px-4 sm:px-6 lg:px-8 lg:py-24">
+  <div id="portifolio">
+    <div class="container text-center mx-auto py-12 px-4 sm:px-6 lg:px-8 lg:py-24">
       <div class="space-y-12">
         <div class="space-y-5 sm:space-y-4">
           <h2 class="text-3xl font-bold font-orbitron text-transparent bg-clip-text bg-cyan-500 tracking-tight sm:text-4xl">Meu Portifolio</h2>
@@ -71,4 +71,10 @@ const projects = [
     </div>
   </div>
 </template>
+
+<style scoped>
+#portifolio {
+  background: radial-gradient(90.69% 50% at 50% 0%, rgba(28, 86, 184, 0.25) 0%, rgba(0, 0, 0, 0) 100%), #121214;
+}
+</style>
 
