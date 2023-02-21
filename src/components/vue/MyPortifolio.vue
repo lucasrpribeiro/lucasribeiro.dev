@@ -5,35 +5,35 @@ const projects = [
     role: 'A sua rádio online! Desenvolvida para te entregar suas músicas favoritas de maneira eficiente.',
     link: 'https://hunter.fm/',
     imageUrl:
-      '/images/portifolio-hunter.png',
+      '/images/thumb/portifolio-hunter.png',
   },
   {
     name: 'Lenyeg',
     role: 'Desenvolvemos produtos digitais,enquanto capacitamos novos profissionais.',
     link: 'https://lenyeg.com.br',
     imageUrl:
-      '/images/portifolio-lenyeg.png',
+      '/images/thumb/portifolio-lenyeg.png',
   },
   {
     name: 'Paranavai.app',
     role: 'Vá além da presença física e seja encontrado por quem precisa de você.',
     link: 'https://paranavai.app',
     imageUrl:
-      '/images/portifolio-pvaiapp.png',
+      '/images/thumb/portifolio-pvaiapp.png',
   },
   {
     name: 'OsmarJr - Advogado',
     role: 'Advogado especialista em direito criminal e direito famíliar.',
     link: 'https://osmarjr.adv.br',
     imageUrl:
-      '/images/portifolio-osmar.png',
+      '/images/thumb/portifolio-osmar.png',
   },
   {
     name: 'iEasy',
     role: 'A maior do mundo no catálogo de aparelhos Apple no atacado!',
     link: 'https://ieasyatacado.com/',
     imageUrl:
-      '/images/portifolio-ieasy.png',
+      '/images/thumb/portifolio-ieasy.png',
   },
   // More projects...
 ]

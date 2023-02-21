@@ -6,7 +6,7 @@ const navigation = [
   { name: 'Sobre mim', href: '#' },
   { name: 'Serviços', href: '/#services' },
   { name: 'Portifolio', href: '/#portifolio' },
-  { name: 'Caontato', href: '/#contact' },
+  { name: 'Contato', href: '/#contact' },
 ]
 </script>
 
@@ -68,7 +68,7 @@ const navigation = [
                   v-for="item in navigation"
                   :key="item.name"
                   :href="item.href"
-                  class="font-medium hover:text-blue-600 duration-300"
+                  class="font-medium text-zinc-400 hover:text-white duration-300"
                   >{{ item.name }}</a
                 >
               </div>
