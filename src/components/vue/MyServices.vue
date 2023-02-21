@@ -41,7 +41,7 @@ const services = [
         </div>
         <ul
           role="list"
-          class="mx-auto grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-4 md:gap-x-6 lg:gap-x-12 lg:gap-y-12"
+          class="mx-auto grid grid-cols-1 gap-x-4 gap-y-8 xl:grid-cols-4 lg:gap-x-12 lg:gap-y-12"
         >
           <li v-for="service in services" :key="service.name">
             <div
