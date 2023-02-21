@@ -45,7 +45,7 @@ const services = [
         >
           <li v-for="service in services" :key="service.name">
             <div
-              class="group rounded-xl bg-white shadow-md cursor-pointer bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-[0.04] p-4 h-[376px] min-h-[376px] flex flex-col items-center gap-6 hover:bg-zinc-700/40 hover:shadow-xl duration-300"
+              class="group rounded-xl bg-white shadow-md cursor-pointer bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-[0.04] p-4 h-[376px] min-h-[376px] flex flex-col items-center gap-6 border-b border-gray-700 hover:bg-zinc-700/40 hover:shadow-xl duration-300"
             >
               <img
                 class="p-2 bg-white bg-opacity-[0.02] rounded-lg mt-12"
