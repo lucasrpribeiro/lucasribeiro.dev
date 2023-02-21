@@ -1,5 +1,5 @@
-<section id="contact" class="container mx-auto my-16 p-2">
-  <section class="relative" aria-labelledby="join-heading">
+<section id="contact">
+  <section class="relative container mx-auto py-16" aria-labelledby="join-heading">
     <div class="absolute inset-x-0 hidden h-1/2 lg:block" aria-hidden="true">
     </div>
     <div class="mx-auto lg:px-8">
@@ -17,8 +17,8 @@
             >
               <img
                 draggable="false"
-                class="rounded-3xl border border-cyan-500 object-cover object-top lg:object-center shadow-2xl"
-                src="images/lucas2.png"
+                class="rounded-3xl image-border object-cover object-top lg:object-center"
+                src="images/contact.png"
                 alt=""
               />
             </div>
@@ -26,24 +26,24 @@
         </div>
 
         <div
-          class="relative -mt-12 pt-12 rounded-xl lg:m-0 bg-zinc-800 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-50 lg:col-span-10 lg:col-start-3 lg:row-start-1 lg:grid lg:grid-cols-10 lg:items-center lg:rounded-3xl"
+          class="relative -mt-12 pt-12 rounded-xl lg:m-0 bg-white bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-[0.03] lg:col-span-10 lg:col-start-3 lg:row-start-1 lg:grid lg:grid-cols-10 lg:items-center lg:rounded-3xl"
         >
           <div
             class="relative mx-auto max-w-md space-y-6 py-12 px-4 sm:max-w-3xl sm:py-16 sm:px-6 lg:col-span-6 lg:col-start-4 lg:max-w-none lg:p-0"
           >
             <h2
-              class="text-3xl font-bold font-orbitron tracking-tight"
+              class="text-4xl font-black font-orbitron tracking-tight"
               id="join-heading"
             >
               Vamos criar algo juntos!
             </h2>
-            <p class="text-lg text-white">
+            <p class="text-white 2xl:text-lg">
               Com minha experiência em otimização de performance, proporciono o
               carregamento rápido de seu site, melhorando a experiência do
               usuário e aumentando as chances de conversão. fames.
             </p>
             <a
-              class="block w-full rounded-md bg-gradient-to-r from-teal-500 to-cyan-500 py-3 px-5 text-center text-base font-medium shadow-md hover:shadow-lg hover:scale-110 duration-300 sm:inline-block sm:w-auto"
+              class="block w-full rounded-md bg-customBlue py-3 px-5 text-center text-base font-medium shadow-md duration-300 sm:inline-block sm:w-auto"
               href="#">Entre em contato!</a
             >
           </div>
@@ -52,3 +52,18 @@
     </div>
   </section>
 </section>
+
+<style scoped>
+  #contact {
+    background: radial-gradient(
+        90.69% 50% at 50% 100%,
+        rgba(28, 86, 184, 0.25) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      #121214;
+  }
+
+  .image-border {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+</style>
