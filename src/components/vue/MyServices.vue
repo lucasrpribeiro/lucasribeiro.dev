@@ -4,7 +4,7 @@ const services = [
     name: 'Otimização de Busca (SEO)',
     role: 'SEO é a prática de otimizar um site para que ele seja facilmente encontrado e indexado pelos mecanismos de busca.',
     imageUrl: '/images/icones/seo.svg',
-    imageAlt: 'SEO icon'
+    imageAlt: 'SEO icon',
   },
   {
     name: 'Velocidade',
@@ -51,12 +51,11 @@ const services = [
                 class="p-2 bg-white bg-opacity-[0.02] rounded-lg mt-12"
                 :src="service.imageUrl"
                 :alt="service.imageAlt"
+                width="64"
               />
               <div class="space-y-2">
                 <div class="space-y-2">
-                  <h3
-                    class="font-bold group-hover:text-[#528BEB] duration-300"
-                  >
+                  <h3 class="font-bold group-hover:text-[#528BEB] duration-300">
                     {{ service.name }}
                   </h3>
                   <p class="text-[#CCCCCC]">{{ service.role }}</p>
@@ -72,7 +71,11 @@ const services = [
 
 <style scoped>
 #services {
-  background: radial-gradient(90.69% 50% at 50% 100%, rgba(28, 86, 184, 0.25) 0%, rgba(0, 0, 0, 0) 100%), #121214;
+  background: radial-gradient(
+      90.69% 50% at 50% 100%,
+      rgba(28, 86, 184, 0.25) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    #121214;
 }
-
 </style>
