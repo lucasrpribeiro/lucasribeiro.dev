@@ -55,6 +55,7 @@ const services = [
                 :src="service.imageUrl"
                 :alt="service.imageAlt"
                 width="64"
+                height="64"
               />
               <div class="space-y-2">
                 <div class="space-y-2">

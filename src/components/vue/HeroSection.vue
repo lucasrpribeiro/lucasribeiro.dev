@@ -142,6 +142,7 @@ const navigation = [
                 <source
                   srcset="/images/hero-mobile.png"
                   width="343"
+                  hidden="297"
                   media="(max-width: 765px)"
                 />
                 <img
@@ -149,6 +150,7 @@ const navigation = [
                   src="/images/hero-desktop.png"
                   alt="Lucas Ribeiro"
                   width="596"
+                  height="625"
                   class="relative z-10"
                 />
                 <div

@@ -125,6 +125,7 @@ const projects = [
                 :src="project.thumb"
                 :alt="project.alt"
                 width="183"
+                height="103"
                 :class="[
                   'rounded-md',
                   selected
@@ -160,6 +161,7 @@ const projects = [
                 alt="Hunter"
                 class="flex-1 rounded-md"
                 width="596"
+                height="335"
               />
             </TabPanel>
           </TabPanels>
