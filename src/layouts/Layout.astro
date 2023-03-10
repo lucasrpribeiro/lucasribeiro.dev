@@ -48,14 +48,12 @@ const titleTemplate = () => {
     color: #121214;
   }
 
-  /* scrollbar */
-  /* Firefox */
-  * {
+  @media (min-width: 1024px) {
+    * {
     scrollbar-width: auto;
     scrollbar-color: #1c56b8 #ffffff10;
   }
 
-  /* Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
     width: 5px;
   }
@@ -69,4 +67,5 @@ const titleTemplate = () => {
     border-radius: 12px;
     border: 0px none #fff;
   }
+}
 </style>
