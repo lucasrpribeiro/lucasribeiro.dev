@@ -1,13 +1,19 @@
 ---
 export interface Props {
   title: string
+  description?: string
 }
 
-const { title } = Astro.props
+let { title, description } = Astro.props
+
+const titleTemplate = () => {
+  const siteName = 'Desenvolvedor Web'
+  return title && title !== siteName ? `${title} - ${siteName}` : siteName
+}
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -19,13 +25,14 @@ const { title } = Astro.props
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <title>{title}</title>
+    <title>{titleTemplate()}</title>
+    <meta name="description" content={description} />
   </head>
   <body class="bg-primary text-white">
     <slot />
   </body>
 
-  <!-- I am ¯\_( ͡❛ ͜ʖ ͡❛)_/¯ LKs -->
+  <!-- I am LKs ¯\_( ͡❛ ͜ʖ ͡❛)_/¯ -->
 </html>
 <style is:global>
   :root {
