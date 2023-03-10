@@ -31,8 +31,8 @@ const links = [
       >
         <span
           class="h-8 sm:h-10 text-black bg-white rounded-xl py-2 px-6 font-black uppercase"
-          >Lucas <span class="hidden lg:inline">Ribeiro</span></span
-        >
+          >🏗 Lucas <span class="hidden lg:inline">Ribeiro 🏗</span>
+        </span>
         <!-- <img src="" alt="Lucas Ribeiro logo" class="bg-white w-20 h-11" /> -->
         <span class="text-center"
           >2023 © Lucas Ribeiro. Todos os direitos reservados.</span
