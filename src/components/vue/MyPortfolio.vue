@@ -155,7 +155,9 @@ const projects = [
                   <p class="text-justify text-xl 2xl:text-2xl">
                     {{ proj.description }}
                   </p>
-                  <section class="flex items-end justify-between">
+                  <section
+                    class="flex flex-col lg:flex-row lg:items-end justify-between gap-4"
+                  >
                     <TheButton :link="proj.url">De uma olhada!</TheButton>
                     <ul class="flex flex-row items-center gap-2">
                       <li v-for="lang in proj.langs" :key="lang">
