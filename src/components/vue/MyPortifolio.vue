@@ -1,4 +1,5 @@
 <script setup>
+import TheButton from './TheButton.vue'
 import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '@headlessui/vue'
 
 const projects = [
@@ -6,22 +7,24 @@ const projects = [
     di: 1,
     name: 'Hunter.fm',
     description:
-      'A sua rádio online! Desenvolvida para te entregar suas músicas favoritas de maneira eficiente.',
+      'A sua rádio online! Desenvolvida para te entregar suas músicas favoritas de maneira eficiente. Neste projeto foi utilizado o Nuxt, TailwindCss e Tipescript. Além dessas ferramentas, foi utilizado o Axios para consumir as APIs que se comunicam com o backend, fazendo o CRUD para as interações de usuário e consumindo as informações necessárias para o funcionamento das músicas e rádios.',
     url: 'https://hunter.fm/',
     alt: 'Hunter',
     thumb: '/images/thumb/portifolio-hunter.png',
     screenshot: '/images/screenshots/hunter-screenshot.png',
     langs: [
-      { name: 'vue', color: '#10b981' },
+      { name: 'nuxt', color: '#10b981' },
       { name: 'typescript', color: '#0284c7' },
       { name: 'tailwindcss', color: '#0ea5e9' },
+      { name: 'axios', color: '#facc15' },
+      { name: 'jest', color: '#f97316' },
     ],
   },
   {
     id: 2,
     name: 'Lenyeg',
     description:
-      'Desenvolvemos produtos digitais,enquanto capacitamos novos profissionais.',
+      'Uma landing page construída em Astro um framework que segue a estratégia de ilhas para uma melhor desempenho, no desenvolvimento da página foi usado técnicas de SEO para um bom ranqueamento no Google, TailwindCss para a estilização e Vue para alguns componentes mais complexos.',
     url: 'https://lenyeg.com.br',
     alt: 'Lenyeg',
     thumb: '/images/thumb/portifolio-lenyeg.png',
@@ -36,7 +39,7 @@ const projects = [
     id: 3,
     name: 'Paranavai.app',
     description:
-      'Vá além da presença física e seja encontrado por quem precisa de você.',
+      'Paranavai.app é um aplicativo para ajudar os serviços da cidade de Paranavaí a serem encontrados mais facilmente. A LP foi construída utilizando Nuxt, Typescript e TailwindCss seguindo boas práticas para uma melhor desempenho e SEO.',
     url: 'https://paranavai.app',
     alt: 'Paranavai.app',
     thumb: '/images/thumb/portifolio-pvaiapp.png',
@@ -51,7 +54,7 @@ const projects = [
     id: 4,
     name: 'OsmarJr - Advogado',
     description:
-      'Advogado especialista em direito criminal e direito famíliar.',
+      'Uma landing page construída em Astro um framework que segue a estratégia de ilhas para uma melhor desempenho, no desenvolvimento da página foi usado técnicas de SEO para um bom ranqueamento no Google, TailwindCss para a estilização e Vue para alguns componentes mais complexos.',
     url: 'https://osmarjr.adv.br',
     alt: 'OsmarJr Advogado',
     thumb: '/images/thumb/portifolio-osmar.png',
@@ -65,7 +68,8 @@ const projects = [
   {
     id: 5,
     name: 'iEasy',
-    description: 'A maior do mundo no catálogo de aparelhos Apple no atacado!',
+    description:
+      'Uma landing page construída em Astro um framework que segue a estratégia de ilhas para uma melhor desempenho, no desenvolvimento da página foi usado técnicas de SEO para um bom ranqueamento no Google, TailwindCss para a estilização e possui uma integração com o Whatsapp para facilitar o atendimento ao cliente.',
     url: 'https://ieasyatacado.com/',
     alt: 'iEasy',
     thumb: '/images/thumb/portifolio-ieasy.png',
@@ -79,15 +83,17 @@ const projects = [
   {
     id: 6,
     name: 'Velog',
-    description: 'A maior do mundo no catálogo de aparelhos Apple no atacado!',
+    description:
+      'O Velog Rotas é uma aplicação de rotas, onde você pode fazer uma estimativa de quanto sua viagem pode te custar, calculando o quanto de combustível você irá gastar, os pedágio na rota trassada e se for um veículo de carga ela também mostra as balanças que existem durante o trajeto, a aplicação foi feita em Nuxt, usando o Pinia para gerenciamento de estado, Axios para consumo da api e Cypress para fazer os testes automatizados.',
     url: 'https://velog.com.br/',
     alt: 'iEasy',
     thumb: '/images/thumb/portifolio-velog.png',
     screenshot: '/images/screenshots/velog-screenshot.png',
     langs: [
-      { name: 'vue', color: '#10b981' },
+      { name: 'nuxt', color: '#10b981' },
       { name: 'typescript', color: '#0284c7' },
       { name: 'tailwindcss', color: '#0ea5e9' },
+      { name: 'cypress', color: '#c3c3c3' },
     ],
   },
 ]
@@ -139,22 +145,29 @@ const projects = [
             <TabPanel
               v-for="(proj, index) in Object.values(projects)"
               :key="index"
-              class="flex flex-col gap-4 justify-center items-center xl:flex-row xl:items-start"
+              class="flex flex-col gap-8 justify-center items-center xl:flex-row xl:items-start"
             >
               <article class="flex flex-col text-start gap-4 flex-1">
-                <span class="text-2xl font-black">{{ proj.name }}</span>
-                <p class="text-xl">
-                  {{ proj.description }}
-                </p>
-                <ul class="flex flex-row items-center gap-2">
-                  <li v-for="lang in proj.langs" :key="lang">
-                    <span
-                      class="p-1 rounded-md text-sm"
-                      :style="`background-color: ${lang.color}40; border: 1px solid ${lang.color};`"
-                      >{{ lang.name }}</span
-                    >
-                  </li>
-                </ul>
+                <section
+                  class="flex flex-col text-start gap-4 max-w-[570px] 2xl:max-w-full 2xl:gap-8"
+                >
+                  <span class="text-2xl font-black">{{ proj.name }}</span>
+                  <p class="text-justify text-xl 2xl:text-2xl">
+                    {{ proj.description }}
+                  </p>
+                  <section class="flex items-end justify-between">
+                    <TheButton :link="proj.url">De uma olhada!</TheButton>
+                    <ul class="flex flex-row items-center gap-2">
+                      <li v-for="lang in proj.langs" :key="lang">
+                        <span
+                          class="p-1 rounded-md text-sm"
+                          :style="`background-color: ${lang.color}40; border: 1px solid ${lang.color};`"
+                          >{{ lang.name }}</span
+                        >
+                      </li>
+                    </ul>
+                  </section>
+                </section>
               </article>
               <img
                 :src="proj.screenshot"

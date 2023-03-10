@@ -1,4 +1,5 @@
 <script setup>
+import TheButton from './TheButton.vue'
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
@@ -107,10 +108,9 @@ const navigation = [
                     class="block rounded-md px-5 py-3 bg-white bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-5 text-base font-medium duration-300"
                     >{{ item.name }}</a
                   >
-                  <a
-                    href="#"
-                    class="block bg-customBlue px-5 py-3 text-center font-medium rounded-lg"
-                    >Entre em contato!</a
+                  <TheButton
+                    link="mailto:lucas.ribeiro711@gmail.com?Subject=Ol%E1%2C%20vim%20parar%20aqui%20atrav%E9s%20de%20sua%20LP%2C%20vamos%20fazer%20algo%20juntos%21"
+                    >Entre em contato!</TheButton
                   >
                 </div>
               </div>
@@ -122,7 +122,7 @@ const navigation = [
           class="container flex flex-col items-center justify-center gap-6 xl:flex-row mx-auto pt-5 px-4"
         >
           <div
-            class="flex flex-col items-center justify-center text-center xl:text-left flex-1 xl:items-start"
+            class="flex flex-col items-center justify-center text-center gap-6 xl:text-left flex-1 xl:items-start"
           >
             <h1
               class="font-orbitron text-4xl font-black tracking-tight lg:text-6xl"
@@ -130,16 +130,13 @@ const navigation = [
               <span class="block">Olá, eu sou Lucas!</span>
               <span class="block">Programador Web</span>
             </h1>
-            <p
-              class="mt-3 max-w-md md:mt-10 md:max-w-3xl md:text-3xl text-[#CCCCCC]"
-            >
+            <p class="max-w-md md:max-w-3xl md:text-3xl text-[#CCCCCC]">
               Como desenvolvedor web especializado em SEO e performance, posso
               ajudar seu negócio a alcançar novos patamares de sucesso online.
             </p>
-            <a
-              href="#"
-              class="mt-4 lg:mt-10 block w-44 px-5 py-3 text-center font-medium rounded-lg bg-customBlue hover:bg-blue-600 duration-300"
-              >Entre em contato!</a
+            <TheButton
+              link="mailto:lucas.ribeiro711@gmail.com?Subject=Ol%E1%2C%20vim%20parar%20aqui%20atrav%E9s%20de%20sua%20LP%2C%20vamos%20fazer%20algo%20juntos%21"
+              >Entre em contato!</TheButton
             >
           </div>
           <section
