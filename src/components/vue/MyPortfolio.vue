@@ -10,7 +10,7 @@ const projects = [
       'A sua rádio online! Desenvolvida para te entregar suas músicas favoritas de maneira eficiente. Neste projeto foi utilizado o Nuxt, TailwindCss e Tipescript. Além dessas ferramentas, foi utilizado o Axios para consumir as APIs que se comunicam com o backend, fazendo o CRUD para as interações de usuário e consumindo as informações necessárias para o funcionamento das músicas e rádios.',
     url: 'https://hunter.fm/',
     alt: 'Hunter',
-    thumb: '/images/thumb/portifolio-hunter.png',
+    thumb: '/images/thumb/portfolio-hunter.png',
     screenshot: '/images/screenshots/hunter-screenshot.png',
     langs: [
       { name: 'nuxt', color: '#10b981' },
@@ -27,7 +27,7 @@ const projects = [
       'Uma landing page construída em Astro um framework que segue a estratégia de ilhas para uma melhor desempenho, no desenvolvimento da página foi usado técnicas de SEO para um bom ranqueamento no Google, TailwindCss para a estilização e Vue para alguns componentes mais complexos.',
     url: 'https://lenyeg.com.br',
     alt: 'Lenyeg',
-    thumb: '/images/thumb/portifolio-lenyeg.png',
+    thumb: '/images/thumb/portfolio-lenyeg.png',
     screenshot: '/images/screenshots/lenyeg-screenshot.png',
     langs: [
       { name: 'vue', color: '#10b981' },
@@ -42,7 +42,7 @@ const projects = [
       'Paranavai.app é um aplicativo para ajudar os serviços da cidade de Paranavaí a serem encontrados mais facilmente. A LP foi construída utilizando Nuxt, Typescript e TailwindCss seguindo boas práticas para uma melhor desempenho e SEO.',
     url: 'https://paranavai.app',
     alt: 'Paranavai.app',
-    thumb: '/images/thumb/portifolio-pvaiapp.png',
+    thumb: '/images/thumb/portfolio-pvaiapp.png',
     screenshot: '/images/screenshots/pvai-screenshot.png',
     langs: [
       { name: 'vue', color: '#10b981' },
@@ -57,7 +57,7 @@ const projects = [
       'Uma landing page construída em Astro um framework que segue a estratégia de ilhas para uma melhor desempenho, no desenvolvimento da página foi usado técnicas de SEO para um bom ranqueamento no Google, TailwindCss para a estilização e Vue para alguns componentes mais complexos.',
     url: 'https://osmarjr.adv.br',
     alt: 'OsmarJr Advogado',
-    thumb: '/images/thumb/portifolio-osmar.png',
+    thumb: '/images/thumb/portfolio-osmar.png',
     screenshot: '/images/screenshots/osmar-screenshot.png',
     langs: [
       { name: 'vue', color: '#10b981' },
@@ -72,7 +72,7 @@ const projects = [
       'Uma landing page construída em Astro um framework que segue a estratégia de ilhas para uma melhor desempenho, no desenvolvimento da página foi usado técnicas de SEO para um bom ranqueamento no Google, TailwindCss para a estilização e possui uma integração com o Whatsapp para facilitar o atendimento ao cliente.',
     url: 'https://ieasyatacado.com/',
     alt: 'iEasy',
-    thumb: '/images/thumb/portifolio-ieasy.png',
+    thumb: '/images/thumb/portfolio-ieasy.png',
     screenshot: '/images/screenshots/ieasy-screenshot.png',
     langs: [
       { name: 'vue', color: '#10b981' },
@@ -87,7 +87,7 @@ const projects = [
       'O Velog Rotas é uma aplicação de rotas, onde você pode fazer uma estimativa de quanto sua viagem pode te custar, calculando o quanto de combustível você irá gastar, os pedágio na rota trassada e se for um veículo de carga ela também mostra as balanças que existem durante o trajeto, a aplicação foi feita em Nuxt, usando o Pinia para gerenciamento de estado, Axios para consumo da api e Cypress para fazer os testes automatizados.',
     url: 'https://velog.com.br/',
     alt: 'iEasy',
-    thumb: '/images/thumb/portifolio-velog.png',
+    thumb: '/images/thumb/portfolio-velog.png',
     screenshot: '/images/screenshots/velog-screenshot.png',
     langs: [
       { name: 'nuxt', color: '#10b981' },
@@ -109,7 +109,7 @@ const projects = [
           <h2
             class="text-lg font-medium border border-gray-500 p-2 px-4 rounded-3xl inline"
           >
-            Meu Portifolio
+            Meu Portfólio
           </h2>
           <p class="text-[32px] font-black">
             Confira alguns dos meus trabalhos recentes.
@@ -185,7 +185,7 @@ const projects = [
 </template>
 
 <style scoped>
-#portifolio {
+#portfolio {
   background: radial-gradient(
       90.69% 50% at 50% 0%,
       rgba(28, 86, 184, 0.25) 0%,
