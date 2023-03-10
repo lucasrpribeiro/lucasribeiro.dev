@@ -5,7 +5,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 const navigation = [
   { name: 'Sobre mim', href: '#' },
   { name: 'Serviços', href: '/#services' },
-  { name: 'Portifolio', href: '/#portifolio' },
+  { name: 'Portfólio', href: '/#portfolio' },
   { name: 'Contato', href: '/#contact' },
 ]
 </script>
@@ -26,12 +26,16 @@ const navigation = [
                 <div class="flex w-full items-center justify-between md:w-auto">
                   <a href="#">
                     <span class="sr-only">Lucas Ribeiro - Web Developer</span>
-                    <img
+                    <span
+                      class="h-8 sm:h-10 text-black bg-white rounded-xl py-2 px-6 font-black uppercase"
+                      >Lucas <span class="hidden lg:inline">Ribeiro</span></span
+                    >
+                    <!-- <img
                       class="h-8 w-auto sm:h-10"
                       src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                       alt=""
                       width="38"
-                    />
+                    /> -->
                   </a>
                   <div class="flex items-center md:hidden">
                     <PopoverButton
@@ -73,12 +77,16 @@ const navigation = [
               <div class="overflow-hidden">
                 <div class="flex items-center justify-between p-4">
                   <div>
-                    <img
+                    <span
+                      class="h-8 sm:h-10 text-black bg-white rounded-xl py-2 px-6 font-black uppercase"
+                      >Lucas <span class="hidden lg:inline">Ribeiro</span></span
+                    >
+                    <!-- <img
                       class="h-8 w-auto"
                       src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                       alt=""
                       width="38"
-                    />
+                    /> -->
                   </div>
                   <div>
                     <PopoverButton

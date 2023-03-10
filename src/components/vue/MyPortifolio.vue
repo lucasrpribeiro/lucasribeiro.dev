@@ -94,7 +94,7 @@ const projects = [
 </script>
 
 <template>
-  <div id="portifolio">
+  <div id="portfolio">
     <div
       class="container text-center mx-auto py-12 px-4 sm:px-6 lg:px-8 lg:py-24"
     >
