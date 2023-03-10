@@ -119,12 +119,12 @@ const navigation = [
             <h1
               class="font-orbitron text-4xl font-black tracking-tight lg:text-6xl"
             >
-              <span class="block"
-                >Olá, eu sou <span class="text-customBlue">Lucas!</span></span
-              >
+              <span class="block">Olá, eu sou Lucas!</span>
               <span class="block">Programador Web</span>
             </h1>
-            <p class="mt-3 max-w-md md:mt-10 md:max-w-3xl md:text-3xl">
+            <p
+              class="mt-3 max-w-md md:mt-10 md:max-w-3xl md:text-3xl text-[#CCCCCC]"
+            >
               Como desenvolvedor web especializado em SEO e performance, posso
               ajudar seu negócio a alcançar novos patamares de sucesso online.
             </p>
@@ -148,7 +148,7 @@ const navigation = [
                   draggable="false"
                   src="/images/hero-desktop.png"
                   alt="Lucas Ribeiro"
-                  width="1024"
+                  width="596"
                   class="relative z-10"
                 />
                 <div

@@ -100,10 +100,11 @@ const projects = [
     >
       <div class="space-y-12">
         <div class="space-y-5 sm:space-y-4">
-          <span
-            class="text-lg font-medium border border-gray-500 p-2 px-4 rounded-3xl"
-            >Meu Portifolio</span
+          <h2
+            class="text-lg font-medium border border-gray-500 p-2 px-4 rounded-3xl inline"
           >
+            Meu Portifolio
+          </h2>
           <p class="text-[32px] font-black">
             Confira alguns dos meus trabalhos recentes.
           </p>
@@ -137,7 +138,7 @@ const projects = [
             <TabPanel
               v-for="(proj, index) in Object.values(projects)"
               :key="index"
-              class="flex flex-col gap-4 lg:flex-row"
+              class="flex flex-col gap-4 justify-center items-center xl:flex-row xl:items-start"
             >
               <article class="flex flex-col text-start gap-4 flex-1">
                 <span class="text-2xl font-black">{{ proj.name }}</span>
@@ -158,6 +159,7 @@ const projects = [
                 :src="proj.screenshot"
                 alt="Hunter"
                 class="flex-1 rounded-md"
+                width="596"
               />
             </TabPanel>
           </TabPanels>

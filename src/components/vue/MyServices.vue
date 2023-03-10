@@ -10,16 +10,19 @@ const services = [
     name: 'Velocidade',
     role: 'Melhoria da experiência do usuário: pessoas tendem a desistir de um site que leva muito tempo para carregar.',
     imageUrl: '/images/icones/time.svg',
+    imageAlt: 'Speed icon',
   },
   {
     name: 'Design',
     role: 'Um design intuitivo pode ajudar os visitantes a encontrar facilmente o que eles estão procurando no seu site e, assim, aumentar a chance de conversão.',
     imageUrl: '/images/icones/design.svg',
+    imageAlt: 'Design icon',
   },
   {
     name: 'Apresentação',
     role: 'A aparência do seu site é a primeira coisa que as pessoas veem, criar uma boa primeira impressão pode aumentar a confiança do usuário no seu negócio.',
     imageUrl: '/images/icones/presentation.svg',
+    imageAlt: 'Aparence icon',
   },
   // More services...
 ]
@@ -27,14 +30,14 @@ const services = [
 
 <template>
   <div id="services">
-    <div class="container mx-auto py-12 px-4 text-center sm:px-6">
+    <div class="container mx-auto py-12 px-4 pt-24 text-center sm:px-6">
       <div class="space-y-8 sm:space-y-12">
         <div class="space-y-5 sm:mx-auto sm:space-y-3">
-          <span
-            class="text-lg font-medium border border-gray-500 p-2 px-4 rounded-3xl"
+          <h2
+            class="text-lg font-medium border border-gray-500 p-2 px-4 rounded-3xl inline"
           >
             Serviços
-          </span>
+          </h2>
           <p class="text-[32px] font-black">
             Como vou te ajudar a conseguir mais clientes.
           </p>
@@ -55,9 +58,9 @@ const services = [
               />
               <div class="space-y-2">
                 <div class="space-y-2">
-                  <h3 class="font-bold group-hover:text-[#528BEB] duration-300">
+                  <h2 class="font-bold group-hover:text-[#528BEB] duration-300">
                     {{ service.name }}
-                  </h3>
+                  </h2>
                   <p class="text-[#CCCCCC]">{{ service.role }}</p>
                 </div>
               </div>
