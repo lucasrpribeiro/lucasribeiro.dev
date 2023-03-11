@@ -148,8 +148,8 @@ const navigation = [
               <picture class="relative">
                 <source
                   srcset="/images/hero-mobile.png"
-                  width="343"
-                  hidden="297"
+                  width="656"
+                  hidden="656"
                   media="(max-width: 765px)"
                 />
                 <img
