@@ -22,9 +22,18 @@ const titleTemplate = () => {
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet"
+        type="text/css"
+      />
+    </noscript>
     <title>{titleTemplate()}</title>
     <meta name="description" content={description} />
   </head>
@@ -50,22 +59,22 @@ const titleTemplate = () => {
 
   @media (min-width: 1024px) {
     * {
-    scrollbar-width: auto;
-    scrollbar-color: #1c56b8 #ffffff10;
-  }
+      scrollbar-width: auto;
+      scrollbar-color: #1c56b8 #ffffff10;
+    }
 
-  *::-webkit-scrollbar {
-    width: 5px;
-  }
+    *::-webkit-scrollbar {
+      width: 5px;
+    }
 
-  *::-webkit-scrollbar-track {
-    background: #ffffff10;
-  }
+    *::-webkit-scrollbar-track {
+      background: #ffffff10;
+    }
 
-  *::-webkit-scrollbar-thumb {
-    background-color: #1c56b8;
-    border-radius: 12px;
-    border: 0px none #fff;
+    *::-webkit-scrollbar-thumb {
+      background-color: #1c56b8;
+      border-radius: 12px;
+      border: 0px none #fff;
+    }
   }
-}
 </style>
