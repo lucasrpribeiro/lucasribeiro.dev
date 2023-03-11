@@ -1,0 +1,78 @@
+---
+import TheButton from './vue/TheButton.vue'
+---
+
+<section id="contact">
+  <section
+    class="relative container mx-auto py-16"
+    aria-labelledby="join-heading"
+  >
+    <div class="absolute inset-x-0 hidden h-1/2 lg:block" aria-hidden="true">
+    </div>
+    <div class="mx-auto lg:px-8">
+      <div class="lg:grid lg:grid-cols-12">
+        <div
+          class="relative z-10 lg:col-span-4 lg:col-start-1 lg:row-start-1 lg:bg-transparent lg:py-16"
+        >
+          <div class="absolute inset-x-0 h-1/2 lg:hidden" aria-hidden="true">
+          </div>
+          <div
+            class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0"
+          >
+            <div
+              class="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1"
+            >
+              <img
+                draggable="false"
+                class="rounded-3xl image-border object-cover object-top lg:object-center"
+                src="images/contact.png"
+                alt="Lucas Ribeiro"
+                width="392"
+                height="392"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="relative -mt-12 pt-12 rounded-xl lg:m-0 bg-white bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-[0.03] border-b border-gray-700 lg:col-span-10 lg:col-start-3 lg:row-start-1 lg:grid lg:grid-cols-10 lg:items-center lg:rounded-3xl"
+        >
+          <div
+            class="relative mx-auto max-w-md space-y-6 py-12 px-4 sm:max-w-3xl sm:py-16 sm:px-6 lg:col-span-6 lg:col-start-4 lg:max-w-none lg:p-0"
+          >
+            <h2
+              class="text-4xl font-black font-orbitron tracking-tight"
+              id="join-heading"
+            >
+              Vamos criar algo juntos!
+            </h2>
+            <p class="text-white 2xl:text-lg">
+              Com minha experiência em otimização de performance, proporciono o
+              carregamento rápido de seu site, melhorando a experiência do
+              usuário e aumentando as chances de conversão.
+            </p>
+            <TheButton
+              link="mailto:lucas.ribeiro711@gmail.com?Subject=Ol%E1%2C%20vim%20parar%20aqui%20atrav%E9s%20de%20sua%20LP%2C%20vamos%20fazer%20algo%20juntos%21"
+              >Entre em contato!</TheButton
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<style scoped>
+  #contact {
+    background: radial-gradient(
+        90.69% 50% at 50% 100%,
+        rgba(28, 86, 184, 0.25) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      #121214;
+  }
+
+  .image-border {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+</style>

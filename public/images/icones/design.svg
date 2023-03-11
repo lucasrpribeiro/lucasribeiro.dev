@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none">
+  <mask id="a" fill="#fff">
+    <rect width="38" height="38" x="5" y="5" rx="2" />
+  </mask>
+  <rect width="38" height="38" x="5" y="5" stroke="#fff" stroke-width="8" mask="url(#a)" rx="2" />
+  <rect width="14" height="14" x="15" y="14" fill="#528BEB" fill-opacity=".5" rx="2" />
+  <rect width="14" height="14" x="19" y="20" fill="#528BEB" fill-opacity=".5" rx="2" />
+  <rect width="10" height="10" x="2" y="2" fill="#fff" rx="2" />
+  <rect width="10" height="10" x="36" y="2" fill="#fff" rx="2" />
+  <rect width="10" height="10" x="36" y="36" fill="#fff" rx="2" />
+  <rect width="10" height="10" x="2" y="36" fill="#fff" rx="2" />
+</svg>

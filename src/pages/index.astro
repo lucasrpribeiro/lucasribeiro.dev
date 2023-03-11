@@ -1,28 +1,21 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import Banner from '../components/Banner.astro'
+import HeroSection from '../components/vue/HeroSection.vue'
+import MyPortfolio from '../components/vue/MyPortfolio.vue'
+import MyServices from '../components/vue/MyServices.vue'
+import Contact from '../components/Contact.astro'
+import TheFooter from '../components/vue/TheFooter.vue'
 ---
 
-<Layout title="Lucas Ribeiro - Welcome to my site.">
-  <div
-    class="relative container mx-auto flex flex-col items-center justify-center"
-  >
-    <div
-      class="fixed -top-28 -right-28 blur-[300px] rounded-full bg-gradient-to-r from-yellow-400 to-yellow-700 w-1/3 h-72"
-    >
-    </div>
-    <div
-      class="fixed top-96 -left-28 blur-[300px] rounded-full bg-gradient-to-r from-swapGreen-400 to-green-700 w-1/3 h-72"
-    >
-    </div>
-    <main class="w-full">
-      <Banner />
-    </main>
-  </div>
+<Layout
+  title="Lucas Ribeiro"
+  description={'Olá eu sou Lucas! programador web dedicado a fornecer soluções de desenvolvimento web personalizadas para clientes em todo o mundo. Com habilidades em diversas tecnologias de programação, como HTML, CSS, JavaScript, e frameworks como React, Vue.js sou capaz de criar soluções sob medida para atender às suas necessidades específicas de negócios.'}
+>
+  <main>
+    <HeroSection client:only />
+    <MyServices />
+    <MyPortfolio client:only />
+    <Contact />
+    <TheFooter />
+  </main>
 </Layout>
-
-<style>
-  .circle {
-    filter: blur(200px);
-  }
-</style>

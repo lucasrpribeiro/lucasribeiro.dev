@@ -1,25 +1,69 @@
 /** @type {import('tailwindcss').Config} */
+
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,md,ts,vue}'],
 	theme: {
 		extend: {
+			animation: {
+        'spin-slow': 'spin 3s linear infinite',
+				'pulse-slow': 'pulse 5s linear infinite',
+      },
 			fontFamily: {
-				montserrat: ["Montserrat", 'sans-serif'],
-				roboto: ["Roboto", 'sans-serif']
+				inter: ['Inter', 'sans-serif']
 			},
 			colors: {
-				darkBlue: '#02052a',
-				swapGreen: {
-					200: '#a7c735',
-					400: '#81c846'
-				}
-			},
-			textShadow: {
-        sm: '0 1px 2px var(--tw-shadow-color)',
-        DEFAULT: '0 2px 4px var(--tw-shadow-color)',
-        lg: '0 8px 16px var(--tw-shadow-color)',
-      },
-		},
+				customBlue: '#1C56B8',
+				primary: '#0B0B0D',
+				secondary: '#121214'
+			}
+		}
 	},
-	plugins: [],
+	plugins: [
+		require('@tailwindcss/aspect-ratio'),
+		plugin(function ({ addBase, _theme }) {
+      addBase({
+        'body.no-scroll': {
+          overflow: 'hidden',
+        },
+        html: {
+          scrollBehavior: 'smooth',
+          overflowX: 'hidden',
+        },
+      })
+    }),
+    plugin(function ({ addUtilities }) {
+      addUtilities(
+        {
+          '.scrollbar-hide': {
+            /* IE and Edge */
+            '-ms-overflow-style': 'none',
+
+            /* Firefox */
+            'scrollbar-width': 'none',
+
+            /* Safari and Chrome */
+            '&::-webkit-scrollbar': {
+              display: 'none',
+            },
+          },
+
+          '.scrollbar-default': {
+            /* IE and Edge */
+            '-ms-overflow-style': 'auto',
+
+            /* Firefox */
+            'scrollbar-width': 'auto',
+
+            /* Safari and Chrome */
+            '&::-webkit-scrollbar': {
+              display: 'block',
+            },
+          },
+        },
+        ['responsive'],
+      )
+    }),
+	],
 }

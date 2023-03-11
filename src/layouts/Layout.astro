@@ -1,13 +1,19 @@
 ---
 export interface Props {
   title: string
+  description?: string
 }
 
-const { title } = Astro.props
+let { title, description } = Astro.props
+
+const titleTemplate = () => {
+  const siteName = 'Desenvolvedor Web'
+  return title && title !== siteName ? `${title} - ${siteName}` : siteName
+}
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -16,24 +22,59 @@ const { title } = Astro.props
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
-    <title>{title}</title>
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet"
+        type="text/css"
+      />
+    </noscript>
+    <title>{titleTemplate()}</title>
+    <meta name="description" content={description} />
   </head>
-  <body class="bg-darkBlue text-white">
+  <body class="bg-primary text-white">
     <slot />
   </body>
+
+  <!-- I am LKs ¯\_( ͡❛ ͜ʖ ͡❛)_/¯ -->
 </html>
 <style is:global>
   :root {
-    --accent: 124, 58, 237;
-    --accent-gradient: linear-gradient(
-      45deg,
-      rgb(var(--accent)),
-      #da62c4 30%,
-      white 60%
-    );
-    font-family: 'Montserrat';
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+  }
+  ::selection {
+    background: #f4f4f5;
+    color: #121214;
+  }
+  ::-moz-selection {
+    background: #f4f4f5;
+    color: #121214;
+  }
+
+  @media (min-width: 1024px) {
+    * {
+      scrollbar-width: auto;
+      scrollbar-color: #1c56b8 #ffffff10;
+    }
+
+    *::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    *::-webkit-scrollbar-track {
+      background: #ffffff10;
+    }
+
+    *::-webkit-scrollbar-thumb {
+      background-color: #1c56b8;
+      border-radius: 12px;
+      border: 0px none #fff;
+    }
   }
 </style>
