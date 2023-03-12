@@ -194,7 +194,7 @@ const navigation = [
                   width="161"
                   height="161"
                   fill="none"
-                  class="absolute top-48 right-28 z-40"
+                  class="absolute top-48 right-16 md:right-28 z-40"
                   ref="typescriptIcon"
                 >
                   <g filter="url(#a)">
@@ -253,7 +253,7 @@ const navigation = [
                   height="160"
                   fill="none"
                   id="vue-icon"
-                  class="absolute top-24 left-12"
+                  class="absolute top-16 -left-6 md:top-24 md:left-12 z-40"
                   ref="vueIcon"
                 >
                   <g filter="url(#a)">
@@ -314,7 +314,7 @@ const navigation = [
                   height="165"
                   fill="none"
                   id="astro-icon"
-                  class="absolute top-0 right-32"
+                  class="absolute top-0 right-4 md:right-32 z-40"
                   ref="astroIcon"
                 >
                   <g fill-rule="evenodd" clip-rule="evenodd" filter="url(#a)">
