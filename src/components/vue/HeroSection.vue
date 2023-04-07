@@ -3,7 +3,7 @@ import TheButton from './TheButton.vue'
 import { useMotion } from '@vueuse/motion'
 import { ref } from 'vue'
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
-import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
+import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline/index.js'
 
 const vueIcon = ref()
 const astroIcon = ref()
