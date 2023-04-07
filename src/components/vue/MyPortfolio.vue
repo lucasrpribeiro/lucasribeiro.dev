@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import TheButton from './TheButton.vue'
 import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '@headlessui/vue'
 
@@ -121,8 +121,8 @@ const projects = [
             class="flex items-center xl:justify-center gap-4 2xl:gap-6 scrollbar-hide overflow-x-scroll cursor-grab snap-center first-of-type:ml-4 last-of-type:mr-4"
           >
             <Tab
-              v-for="project in projects"
-              :key="project"
+              v-for="project of projects"
+              :key="project.id"
               as="template"
               v-slot="{ selected }"
               class="border border-transparent rounded-md hover:border hover:border-white duration-300 cursor-pointer focus:outline-none focus:ring-0"
@@ -160,7 +160,7 @@ const projects = [
                   >
                     <TheButton :link="proj.url">De uma olhada!</TheButton>
                     <ul class="flex flex-row items-center gap-2">
-                      <li v-for="lang in proj.langs" :key="lang">
+                      <li v-for="(lang, i) of proj.langs" :key="i">
                         <span
                           class="p-1 rounded-md text-sm"
                           :style="`background-color: ${lang.color}40; border: 1px solid ${lang.color};`"
@@ -196,4 +196,3 @@ const projects = [
     #121214;
 }
 </style>
-
