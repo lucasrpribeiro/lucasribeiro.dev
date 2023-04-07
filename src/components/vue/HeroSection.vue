@@ -72,7 +72,7 @@ const navigation = [
                     <span class="sr-only">Lucas Ribeiro - Web Developer</span>
                     <span
                       class="h-8 sm:h-10 text-black bg-white rounded-xl py-2 px-6 font-black uppercase"
-                      >🏗 Lucas <span class="hidden lg:inline">Ribeiro 🏗</span>
+                      >Lucas <span class="hidden lg:inline">Ribeiro</span>
                     </span>
 
                     <!-- <img
@@ -124,7 +124,7 @@ const navigation = [
                   <div>
                     <span
                       class="h-8 sm:h-10 text-black bg-white rounded-xl py-2 px-6 font-black uppercase"
-                      >🏗 Lucas <span class="hidden lg:inline">Ribeiro 🏗</span>
+                      >Lucas <span class="hidden lg:inline">Ribeiro</span>
                     </span>
 
                     <!-- <img

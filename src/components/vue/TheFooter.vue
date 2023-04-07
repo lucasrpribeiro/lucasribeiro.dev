@@ -18,7 +18,6 @@ const links = [
 ]
 </script>
 
-
 <template>
   <footer
     class="container mx-auto flex flex-col items-center justify-center gap-4 p-6"
@@ -31,7 +30,7 @@ const links = [
       >
         <span
           class="h-8 sm:h-10 text-black bg-white rounded-xl py-2 px-6 font-black uppercase"
-          >🏗 Lucas <span class="hidden lg:inline">Ribeiro 🏗</span>
+          >Lucas <span class="hidden lg:inline">Ribeiro</span>
         </span>
         <!-- <img src="" alt="Lucas Ribeiro logo" class="bg-white w-20 h-11" /> -->
         <span class="text-center"
