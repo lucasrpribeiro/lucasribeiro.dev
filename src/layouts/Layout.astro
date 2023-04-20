@@ -12,6 +12,7 @@ const titleTemplate = () => {
   return title && title !== siteName ? `${title} - ${siteName}` : siteName
 }
 
+const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 socialImageURL = new URL('images/contact-mobile.png', Astro.url)
 ---
 
@@ -39,8 +40,10 @@ socialImageURL = new URL('images/contact-mobile.png', Astro.url)
     </noscript>
     <title>{titleTemplate()}</title>
     <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
     <meta name="description" content={description} />
     <meta property="og:image" content={socialImageURL} />
+    <link rel="canonical" href={canonicalURL} />
   </head>
   <body class="bg-primary text-white">
     <slot />
